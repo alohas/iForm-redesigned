@@ -1,0 +1,29 @@
+.section-1 {
+  &__heading {
+    padding: 2rem 0rem;
+  }
+  &__gallery {
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__cta {
+    width: 90%;
+    margin: 3rem auto;
+
+    &-text {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-weight: 600;
+      color: $color-red;
+      padding: 0.5rem 0;
+
+      p:last-of-type {
+        justify-self: right;
+      }
+    }
+  }
+}

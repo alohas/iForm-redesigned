@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  background-color: $color-grey-dark;
+  //defines one rem
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background: $color-white;
+
+  @include tablet {
+    margin: 0 3rem;
+  }
+}
+
+section {
+  padding: 2rem;
+}
+
+section:nth-child(even) {
+  background: $color-grey-light;
+}

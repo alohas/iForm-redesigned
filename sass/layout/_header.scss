@@ -1,0 +1,22 @@
+.header {
+  padding-top: 2rem;
+  &__logo {
+    display: block;
+    height: 4rem;
+    width: auto;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+
+  &__info {
+    border-top: 1px solid $color-grey-dark;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__menu {
+    display: none;
+  }
+}

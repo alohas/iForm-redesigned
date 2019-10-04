@@ -1,0 +1,58 @@
+//their font is GT-Walsheim-Bold.eot, but you gotta pay for it
+
+body {
+  font-size: $defoult-font-size;
+  color: $color-font;
+  font-family: "Helvetica", sans-serif;
+}
+
+.heading-big {
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.heading-medium {
+  font-size: 1.6rem;
+  font-weight: 600;
+  @include tablet {
+    font-size: 2.8rem;
+  }
+}
+
+.heading-small {
+  color: $color-violet;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.heading-tiny {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+  line-height: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+li::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background: url("img/list.png");
+  background-size: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+}
