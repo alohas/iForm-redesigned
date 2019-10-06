@@ -1,0 +1,48 @@
+.section-3 {
+    margin: 2rem -2rem;
+    
+    h2 {
+        margin: 1rem 2rem;
+    }
+
+    p {
+        margin: 0 2rem;
+        padding: 0.5rem;
+    }
+
+    &__flexwrapper {
+        display: flex;
+        flex-wrap: wrap;
+
+        .flexitem {
+            flex: 0 1 100%; // shorthand flex-grow:0 flex-shrink:1 flex-width:24%
+            margin-top: 3rem;
+            background-color: $color-white;
+
+            .price {
+                float: right;
+            }
+
+            .price-exp {
+                float: right;
+            }
+
+            .btn-cta {
+                float: right;
+                margin: -2rem 2rem 2rem 2rem;
+            }
+            
+        }
+
+        img {
+            width: 100%;
+        }
+
+        @include tablet {
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+    }
+
+}

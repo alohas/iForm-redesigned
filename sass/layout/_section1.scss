@@ -1,13 +1,44 @@
 .section-1 {
+
   &__heading {
     padding: 2rem 0rem;
   }
-  &__gallery {
+
+  &__gallery { 
+    margin: 2rem -2rem;
+
     img {
       display: block;
       width: 100%;
       height: 100%;
     }
+
+    &-imgcontainer {
+      .no-display {
+        display: none;
+      }
+    }
+
+    &-navigation {
+      height: 4rem;
+      width: 100%;
+      background-color: $color-white;
+
+      .circle {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        border: 2px solid $color-grey-dark;
+        margin: 1rem 0.5rem;
+        border-radius: 50%;
+
+        &-active {
+          background-color: $color-grey-dark;
+        }
+      }
+
+    }    
+
   }
 
   &__cta {

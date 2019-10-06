@@ -19,6 +19,14 @@ body {
   }
 }
 
+.heading-medium-light {
+  font-size: 1.6rem;
+  font-weight: 200;
+  @include tablet {
+    font-size: 2.8rem;
+  }
+}
+
 .heading-small {
   color: $color-violet;
   margin: 1rem 0;
@@ -40,7 +48,7 @@ li {
   position: relative;
 }
 
-li::before {
+.section-1 li::before {
   content: "";
   width: 2rem;
   height: 2rem;
@@ -52,7 +60,39 @@ li::before {
   left: 0;
 }
 
+
+.section-4 li::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background: url("img/green-thick.png");
+  background-size: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 a {
   font-size: inherit;
   text-decoration: none;
 }
+
+.price {
+  font-size: 1.8rem;
+  color: $color-red;
+  font-weight: 900;
+}
+
+.price-save {
+  font-size: 1.5rem;
+  color: $color-red;
+  font-weight: 100;
+}
+
+.price-exp {
+  font-size: 1.1rem;
+  color: $color-grey-darker;
+  font-weight: 900;
+}
+
