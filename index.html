@@ -41,8 +41,50 @@
       </h2>
 
       <div class="section-1__gallery">
-        <img src="img/gallery_placeholder.png" alt="" />
+        <div class="section-1__gallery-imgcontainer">
+          <img src="img-slider/slider-1.jpg" class="img-slider-1" alt="" />
+          <img
+            src="img-slider/slider-2.jpg"
+            class="img-slider-2 no-display"
+            alt=""
+          />
+          <img
+            src="img-slider/slider-3.jpg"
+            class="img-slider-3 no-display"
+            alt=""
+          />
+          <img
+            src="img-slider/slider-4.jpg"
+            class="img-slider-4 no-display"
+            alt=""
+          />
+          <img
+            src="img-slider/slider-5.jpg"
+            class="img-slider-5 no-display"
+            alt=""
+          />
+          <img
+            src="img-slider/slider-6.jpg"
+            class="img-slider-6 no-display"
+            alt=""
+          />
+        </div>
+        <div class="section-1__gallery-navigation">
+          <button class="btn-gallery btn-gallery-left">
+            <img src="img/cursor-left-crop.png" />
+          </button>
+          <div class="circle circle-1 circle-active"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-4"></div>
+          <div class="circle circle-5"></div>
+          <div class="circle circle-6"></div>
+          <button class="btn-gallery btn-gallery-right">
+            <img src="img/cursor-right-crop.png" />
+          </button>
+        </div>
       </div>
+
       <div class="section-1__cta">
         <div class="section-1__cta-text">
           <p>149kr</p>
@@ -51,7 +93,7 @@
         <button class="btn-cta section-1__cta-btn">order now</button>
       </div>
       <div class="section-1__rating"></div>
-      <ul class="section-1__list ">
+      <ul class="section-1__list">
         <li class="section-1__list-itemtouch redlist">
           The magazine hits your mailbox every three weeks - postage-free
         </li>
@@ -73,8 +115,97 @@
       </ul>
     </section>
     <section class="section-2"></section>
-    <section class="section-3"></section>
-    <section class="section-4"></section>
+
+    <section class="section-3">
+      <h2 class="heading-medium section-3__heading">
+        Other offers from I FORM
+      </h2>
+      <div class="section-3__flexwrapper">
+        <div class="section-3__flexwrapper-flexitem1 flexitem">
+          <img src="img/section-3-1.jpg" alt="" />
+          <p class="price">148 kr.</p>
+          <h2 class="heading-medium">
+            4 magazines
+          </h2>
+          <p class="price-exp">+ postage 49.50 kr.</p>
+          <h2 class="heading-medium-light">
+            + Active Fit leisure jacket
+          </h2>
+          <p class="price-save">Save SEK 660!</p>
+
+          <button class="btn-cta btn-cta-mini section-3__cta-btn">
+            Read more
+          </button>
+        </div>
+        <div class="section-3__flexwrapper-flexitem2 flexitem">
+          <img src="img/section-3-2.jpg" alt="" />
+          <p class="price">99 kr.</p>
+          <h2 class="heading-medium">
+            3 magazines
+          </h2>
+          <p class="price-exp">+ postage 49.50 kr.</p>
+          <h2 class="heading-medium-light">
+            + Sports bra from Diadora
+          </h2>
+          <p class="price-save">Save 432 kr!</p>
+
+          <button class="btn-cta btn-cta-mini section-3__cta-btn">
+            Read more
+          </button>
+        </div>
+        <div class="section-3__flexwrapper-flexitem3 flexitem">
+          <img src="img/section-3-3.jpg" alt="" />
+          <p class="price">149 kr.</p>
+          <h2 class="heading-medium">
+            4 magazines
+          </h2>
+          <p class="price-exp">+ postage 49.50 kr.</p>
+          <h2 class="heading-medium-light">
+            + Complete training package
+          </h2>
+          <p class="price-save">Save SEK 661!</p>
+
+          <button class="btn-cta btn-cta-mini section-3__cta-btn">
+            Read more
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-4">
+      <p class="section-4__leadparagraph">See all offers from I FORM</p>
+      <p>
+        Does it feel like a sour duty to live healthy? We know that feeling well
+        - but we would love to help you with it!
+      </p>
+      <h2 class="heading-medium section-4__heading">
+        In each issue of I FORM you get:
+      </h2>
+      <ul class="section-4__list">
+        <li class="section-4__list-listitem">
+          Health in a clear and motivating way
+        </li>
+        <li class="section-4__list-listitem">
+          Guide to how to (re)find the shape in record time
+        </li>
+        <li class="section-4__list-listitem">
+          Inspiration for light and delicious dishes in a busy everyday life
+        </li>
+        <li class="section-4__list-listitem">
+          Tips and tricks for creating a better balance in everyday life and
+          finding peace
+        </li>
+      </ul>
+      <h2 class="heading-medium section-4__heading">
+        Together with the editorial staff of the entire I FORM, we wish you good
+        pleasure.
+      </h2>
+      <p>
+        Yours sincerely, <br />
+        Editor-in-Chief <br />
+        Sara Møller Christensen
+      </p>
+    </section>
     <section class="section-5"></section>
     <section class="section-6"></section>
 
@@ -121,7 +252,6 @@
         <p class="smallest-text"></p>
       </div>
     </footer>
-    <div class="modal"></div>
     <script src="script.js"></script>
   </body>
 </html>
