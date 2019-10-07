@@ -60,13 +60,16 @@ body {
   left: 0;
 }
 
-.section-4 li {
+.section-4 li,
+.section-2 li {
   position: relative;
   list-style: none;
   padding: 0.5rem 0 0.5rem 2rem;
 }
 
-.section-4 li::before, .section-6 li::before {
+.section-4 li::before,
+.section-6 li::before,
+.section-2 li::before {
   content: "";
   width: 2rem;
   height: 2rem;

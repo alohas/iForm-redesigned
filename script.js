@@ -111,3 +111,22 @@ function slideRight() {
     .querySelector(`.circle-${rightImageClassNumber}`)
     .classList.add("circle-active");
 }
+
+var coll = document.querySelector(".collapsible");
+
+coll.addEventListener("click", function toggle() {
+  var ele = document.getElementById("snap");
+  if (ele.style.display == "block") {
+    ele.style.display = "none";
+  } else {
+    ele.style.display = "block";
+  }
+});
+coll.addEventListener("click", function(event) {
+  console.log(event);
+  if (event.target.value === "Read more") {
+    event.target.value = "Read less";
+  } else {
+    event.target.value = "Read more";
+  }
+});
