@@ -1,0 +1,8 @@
+.menu__list {
+  background: $color-grey-light;
+  &-item {
+    font-size: 1.8rem;
+    padding: 1.3rem 2rem;
+    border-bottom: 1px solid $color-grey-dark;
+  }
+}

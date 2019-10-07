@@ -32,7 +32,7 @@ body {
   padding-bottom: 1rem;
 }
 
-li {
+.redlist {
   list-style: none;
   line-height: 2rem;
   padding-bottom: 1rem;
@@ -40,7 +40,7 @@ li {
   position: relative;
 }
 
-li::before {
+.redlist::before {
   content: "";
   width: 2rem;
   height: 2rem;

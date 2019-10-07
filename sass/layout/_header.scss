@@ -6,6 +6,7 @@
     width: auto;
     margin: 0 auto;
     padding-bottom: 1rem;
+    z-index: 10;
   }
 
   &__info {
@@ -14,9 +15,48 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
+    z-index: 10;
+  }
+
+  &__burgermenu {
+    width: 24px;
+    height: 3px;
+
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+    background: $color-violet;
+
+    &::before {
+      content: "";
+
+      width: 24px;
+      height: 3px;
+
+      position: absolute;
+      top: 0.9rem;
+
+      background: $color-violet;
+    }
+
+    &::after {
+      content: "";
+
+      width: 24px;
+      height: 3px;
+
+      position: absolute;
+      top: 1.8rem;
+
+      background: $color-violet;
+    }
   }
 
   &__menu {
-    display: none;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background: $color-grey-light;
   }
 }
