@@ -5,7 +5,7 @@
     p {
         padding: 1rem;
     }
-
+ 
     img {
         width: 100%;
     }
@@ -18,7 +18,7 @@
 
             .review {
                 margin-left: calc(50% - 12.5rem);
-                text-align: center; 
+                text-align: center;
                 width: 25rem;
                 display: inline-block;
             }
@@ -49,16 +49,16 @@
                 }
             }
         }
+    }
+}
 
-        .btn-reviews {
-            &-right {
-                margin-top: -10rem;
-            }
+.btn-reviews {
+    &-right {
+        margin-top: -10rem;
+    }
 
-            &-left {
-                position: absolute;
-                margin-top: -10rem;
-            }
-        }
+    &-left {
+        position: absolute;
+        margin-top: -10rem;
     }
 }
