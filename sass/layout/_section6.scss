@@ -12,37 +12,15 @@
 
     .section-6__reviews {
         margin: 4rem 0;
+
         &-reviewscontainer {
-            width: 65rem;
-            margin-left: calc(50% - 12.5rem);
             height: 15rem;
-            border: 1px solid black;
-            overflow: hidden;
 
             .review {
-                margin-right: 5rem;
-                text-align: center;
+                margin-left: calc(50% - 12.5rem);
+                text-align: center; 
                 width: 25rem;
                 display: inline-block;
-                animation: translateRight 2s infinite;
-            }
-
-            @keyframes translateLeft {
-                from {
-                    transform: translateX(25rem);
-                } 
-                to {
-                    transform: translateX(0rem);
-                }
-            }
-
-            @keyframes translateRight {
-                from {
-                    transform: translateX(-25rem);
-                }
-                to {
-                    transform: translateX(0rem);
-                }
             }
 
             .display-none {
@@ -57,6 +35,7 @@
 
         &-circlecontainer {
             margin-left: calc(50% - 10rem);
+
             .circle-reviews {
                 display: inline-block;
                 width: 1.2rem;
@@ -66,7 +45,7 @@
                 border-radius: 50%;
 
                 &-active {
-                background-color: $color-grey-dark;
+                    background-color: $color-grey-dark;
                 }
             }
         }
@@ -75,6 +54,7 @@
             &-right {
                 margin-top: -10rem;
             }
+
             &-left {
                 position: absolute;
                 margin-top: -10rem;
