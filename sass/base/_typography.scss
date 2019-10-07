@@ -66,13 +66,12 @@ body {
   padding: 0.5rem 0 0.5rem 2rem;
 }
 
-.section-4 li::before {
+.section-4 li::before, .section-6 li::before {
   content: "";
   width: 2rem;
   height: 2rem;
   background: url("img/green-thick.png");
   background-size: 100%;
-
   position: absolute;
   top: 0;
   left: 0;
