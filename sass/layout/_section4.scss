@@ -1,0 +1,22 @@
+.section-4 {
+  position: relative;
+  *:not(li) {
+    padding: 1rem 0;
+  }
+
+  &__leadparagraph {
+    margin: -4rem -2rem 2rem -2rem;
+    color: $color-violet;
+    background-color: $color-grey-light;
+  }
+
+  &__leadparagraph::after {
+    content: "";
+    background: url("img/arrow-right-color.png");
+    position: absolute;
+    margin: -0.25rem 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-size: 100%;
+  }
+}

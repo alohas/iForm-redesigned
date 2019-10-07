@@ -14,4 +14,32 @@
 
   cursor: pointer;
   outline: none;
+
+  &-mini {
+    width: 150px;
+  }
+}
+
+.btn-gallery {
+  height: 4rem;
+  width: 4rem;
+  border: 0;
+
+  &-left {
+    margin-right: 10%;
+  }
+
+  &-right {
+    float: right;
+  }
+}
+
+.btn-reviews {
+  height: 4rem;
+  width: 4rem;
+  border: 0;
+
+  &-right {
+    float: right;
+  }
 }
