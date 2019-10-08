@@ -1,0 +1,34 @@
+.vidContain {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+.vidContain iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+input.collapsible {
+  border: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.section-2 p {
+  padding: 20px 0 20px 0;
+  font-weight: 700;
+}
+
+.section-2 h2 {
+  padding: 20px 0 20px 0;
+}
