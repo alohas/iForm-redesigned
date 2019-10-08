@@ -1,0 +1,19 @@
+.header__form {
+  border-top: 1px solid $color-grey-dark;
+  background: $color-grey-light;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  z-index: 10;
+
+  &-button {
+    background: transparent;
+    border-radius: 0;
+    border: none;
+    font-size: 1.3rem;
+    color: #888b8d;
+    padding: 1.3rem;
+    outline: none;
+  }
+}
