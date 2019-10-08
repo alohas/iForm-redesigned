@@ -12,9 +12,7 @@ for (var i = 0; i < sizes.length; i++) {
 }
 
 function sizeHighlight(btn) {
-  document
-    .querySelector("body > div > article > div.modal__content-footer")
-    .classList.remove("hidden");
+  document.querySelector("button.modalpart2").classList.remove("transparent");
   for (var i = 0; i < sizes.length; i++) {
     sizes[i].classList.remove("selectedSize");
   }
