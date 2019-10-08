@@ -37,7 +37,7 @@ document
   });
 
 const openBTN = document
-  .querySelector("body > section.section-1 > div.section-1__cta > button")
+  .querySelector("button.section-1__cta-btn")
   .addEventListener("click", e => {
     document.querySelector(".modal").classList.remove("hidden");
   });

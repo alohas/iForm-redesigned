@@ -1,5 +1,4 @@
 .modal {
-  position: absolute;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -10,6 +9,7 @@
   z-index: 10;
 
   &__content {
+    overflow: scroll;
     background-color: white;
     max-height: 100%;
     width: 100%;
