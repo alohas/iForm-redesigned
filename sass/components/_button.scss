@@ -7,11 +7,11 @@
   border-radius: 0;
   padding: 1rem 2rem;
   background: $color-violet;
-
+  opacity: 1;
   font-size: inherit;
   color: $color-white;
   font-weight: 600;
-
+  transition: 0.4s;
   cursor: pointer;
   outline: none;
 

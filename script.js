@@ -1,18 +1,50 @@
 "use strict";
 
-// const DOM = {
-//     menuIcon: document.querySelector(".header__burgermenu"),
-//     mobileNav: document.querySelector(".header__menu"),
-//     menuIconAfter: document.querySelector(".header__burgermenu::after"),
-//     menuIconBefore: document.querySelector(".header__burgermenu::before")
-//   };
+const sizes = document.getElementsByClassName("box-modal");
+const continueBTN = document.querySelector(".modalpart2");
 
-//   DOM.menuIcon.addEventListener("click", () => {
-//     DOM.mobileNav.classList.toggle("hidden");
-//     window.getComputedStyle(DOM.menuIcon, ":after").style.display = "none";
-//   });
+continueBTN.addEventListener("click", populateModalTwo);
 
-/* Gallery Slider */
+for (var i = 0; i < sizes.length; i++) {
+  sizes[i].addEventListener("click", event => {
+    sizeHighlight(event);
+  });
+}
+
+function sizeHighlight(btn) {
+  document.querySelector("button.modalpart2").classList.remove("transparent");
+  for (var i = 0; i < sizes.length; i++) {
+    sizes[i].classList.remove("selectedSize");
+  }
+  btn.target.classList.add("selectedSize");
+}
+
+function populateModalTwo() {
+  document
+    .querySelector("button.modal__content-header-back.hidden")
+    .classList.remove("hidden");
+  document.querySelector("div.modal__content-header > h2").textContent =
+    "Select more issues and save more!";
+  document.querySelector("div.modal__content-body").innerHTML = "";
+  document.querySelector("button.btn-cta.modalpart2").classList.add("hidden");
+  document.querySelector("button.checkout").classList.remove("hidden");
+}
+
+document
+  .querySelector("button.modal__content-header-close")
+  .addEventListener("click", e => {
+    document.querySelector(".modal").classList.add("hidden");
+  });
+
+const openBTN = document
+  .querySelector("button.section-1__cta-btn")
+  .addEventListener("click", e => {
+    document.querySelector(".modal").classList.remove("hidden");
+  });
+
+document.querySelector(".checkout").addEventListener("click", e => {
+  window.location = "form.html";
+});
 
 let imageNotationArray = ["-1", "-2", "-3", "-4", "-5", "-6"];
 

@@ -1,3 +1,12 @@
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+.selectedSize {
+  border-color: #5c1182 !important;
+  border-width: 2px !important;
+}
+
+.transparent {
+  opacity: 0 !important;
 }
