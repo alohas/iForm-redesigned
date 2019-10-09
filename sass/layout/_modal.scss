@@ -1,4 +1,5 @@
 .modal {
+  max-height: 0;
   box-sizing: border-box;
   position: fixed;
   top: 0;
@@ -7,11 +8,13 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 10;
+  transition: max-height 0.4s;
 
   &__content {
+    transition: 1s;
+    max-height: 800px;
     overflow: scroll;
     background-color: white;
-    max-height: 100%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -25,7 +28,8 @@
       align-items: center;
       h2 {
         text-align: center;
-        width: 80%;
+        width: 70%;
+        font-size: 1.8rem;
       }
       &-close {
         font-family: inherit;
@@ -59,11 +63,15 @@
       }
     }
     &-body {
-      padding: 2.5rem;
+      padding: 2.5rem 1.5rem 2.5rem 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      grid-column-gap: 2rem;
       &-image {
-        margin: 2rem 0;
+        display: grid;
+        align-items: center;
+        justify-items: center;
         img {
-          margin: 0 auto;
           display: block;
           max-width: 100%;
         }
@@ -75,8 +83,8 @@
         }
         &-wrap {
           display: grid;
-          grid-template-rows: 1fr 1fr;
-          grid-template-columns: 1fr 1fr;
+          //grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr;
           grid-row-gap: 10px;
           grid-column-gap: 5%;
           .box-modal {
@@ -94,6 +102,62 @@
         }
       }
     }
+    &-additional {
+      padding: 0 2.5rem 1.5rem 2.5rem;
+    }
+    &-part2 {
+      padding: 1.5rem 2.5rem 2.5rem 2.5rem;
+      &-container {
+        display: grid;
+        grid-row-gap: 2rem;
+        &-box {
+          cursor: pointer;
+          display: block;
+          padding: 14px 14px 10px;
+          border-radius: 4px;
+          background-color: #fff;
+          border: 1px solid #e9e8e8;
+          position: relative;
+
+          p {
+            display: block;
+            text-align: center;
+            pointer-events: none;
+          }
+          p:nth-child(2) {
+            font-weight: 500;
+            color: red;
+            pointer-events: none;
+          }
+          p:nth-child(3) {
+            display: block;
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.6rem;
+            font-weight: 700;
+            background-color: #fff;
+            text-align: center;
+            color: #161616;
+            pointer-events: none;
+          }
+          p:nth-child(4) {
+            pointer-events: none;
+            display: block;
+            position: absolute;
+            top: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.6rem;
+            font-weight: 700;
+            background-color: #fff;
+            text-align: center;
+            color: #5c1182;
+          }
+        }
+      }
+    }
     &-footer {
       padding: 2.5rem;
       padding-top: 0;
@@ -104,4 +168,20 @@
 button.checkout a {
   text-decoration: none;
   color: inherit;
+}
+
+.selectedBox {
+  border-color: #5c1182 !important;
+  border-width: 2px !important;
+}
+
+.aditionalExp {
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.savingOpen {
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
