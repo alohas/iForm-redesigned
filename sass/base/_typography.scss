@@ -4,6 +4,7 @@ body {
   font-size: $defoult-font-size;
   color: $color-font;
   font-family: "Helvetica", sans-serif;
+  font-size: 1.6rem;
 }
 
 .heading-big {
@@ -65,6 +66,18 @@ body {
   content: "\002714";
   font-size: 1.2rem;
   margin-left: -1.5rem;
+}
+
+.menu__list li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menu__list li:hover {
+  color: $color-red;
+  background-color: white;
 }
 
 a {
