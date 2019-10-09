@@ -1,4 +1,10 @@
 .section-6 {
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   h2,
   p {
     padding: 1rem;
@@ -8,8 +14,27 @@
     width: 100%;
   }
 
-  .section-6__reviews {
+  .star {
+    width: 20px;
+  }
+
+  &__header {
+    margin: 4rem auto;
+    text-align: center;
+    width: 20rem;
+    display: none;
+
+    @include tablet {
+      display: block;
+      width: 90%;
+    }
+  }
+
+  &__reviews {
+    width: 35rem;
     margin: 4rem 0;
+    margin-left: calc(50% - 17.5rem);
+
 
     &-reviewscontainer {
       height: 15rem;
@@ -49,6 +74,7 @@
     }
   }
 }
+
 
 .btn-reviews {
   &-right {

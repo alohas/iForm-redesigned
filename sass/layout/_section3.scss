@@ -1,5 +1,6 @@
 .section-3 {
   position: relative;
+
   h2 {
     margin: 1rem 2rem;
   }
@@ -37,8 +38,12 @@
     }
 
     @include tablet {
-      flex-wrap: nowrap;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .flexitem {
+        flex: 0 1 320px;
+      }
     }
   }
 }
