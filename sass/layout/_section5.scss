@@ -8,4 +8,9 @@
   img {
     width: 100%;
   }
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
 }

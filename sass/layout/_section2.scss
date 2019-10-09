@@ -1,3 +1,11 @@
+.section-2 {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+}
+
 .vidContain {
   position: relative;
   padding-bottom: 56.25%;

@@ -1,22 +1,30 @@
 .section-4 {
   position: relative;
-  *:not(li) {
-    padding: 1rem 0;
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  &__textwrapper * {
+    margin: 1rem 0;
   }
 
   &__leadparagraph {
-    margin: -4rem -2rem 2rem -2rem;
+    display: inline-block;
     color: $color-violet;
-    background-color: $color-grey-light;
+    cursor: pointer;
+    border-bottom: 1px solid $color-violet;
   }
 
-  &__leadparagraph::after {
-    content: "";
-    background: url("img/arrow-right-color.png");
-    position: absolute;
-    margin: -0.25rem 0.5rem;
-    width: 2rem;
-    height: 2rem;
-    background-size: 100%;
+  &__img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    @include desktop {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
   }
 }
