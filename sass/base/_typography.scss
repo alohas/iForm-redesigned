@@ -48,18 +48,6 @@ body {
   position: relative;
 }
 
-.section-1 li::before {
-  content: "";
-  width: 2rem;
-  height: 2rem;
-  background: url("img/list.png");
-  background-size: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .section-4 li,
 .section-5 li,
 .section-2 li {
@@ -68,23 +56,15 @@ body {
   padding: 0.5rem 0 0.5rem 2.5rem;
 }
 
+.section-1 li::before,
 .section-4 li::before,
 .section-5 li::before,
 .section-6 li::before,
 .section-2 li::before {
-  color: #fff;
+  color: #97be0c;
   content: "\002714";
-  background-color: #97be0c;
-  text-align: center;
-  padding-top: 0.18rem;
-  border-radius: 100%;
   font-size: 1.2rem;
-  width: 2rem;
-  height: 2rem;
-  position: absolute;
-  font-weight: 700;
-  top: 0.5rem;
-  left: 0;
+  margin-left: -1.5rem;
 }
 
 a {
