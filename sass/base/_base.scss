@@ -34,7 +34,7 @@ section:nth-child(even) {
 }
 
 #form-body {
-  height: 100vh;
+  min-height: 100vh;
   max-width: 800px;
   margin: 0 auto;
 }
