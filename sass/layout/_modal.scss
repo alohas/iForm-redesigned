@@ -184,4 +184,40 @@ button.checkout a {
 .savingOpen {
   text-align: center;
   padding-bottom: 1.5rem;
+  cursor: pointer;
+  color: #5c1182;
+  text-decoration: underline;
+}
+
+.Savings p {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.details {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+}
+.details td {
+  border: 1px solid #ddd;
+  padding: 10px 20px 10px 20px;
+  border-bottom: 80%;
+}
+.details td:nth-child(even) {
+  text-align: right;
+  border-left: none;
+}
+.details td:nth-child(odd) {
+  border-right: none;
+}
+.discount {
+  color: $color-red;
+  font-weight: 800;
+}
+.special {
+  font-weight: 800;
+}
+.total {
+  font-size: 28px;
 }

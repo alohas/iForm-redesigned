@@ -202,9 +202,9 @@ coll.addEventListener("click", function toggle() {
     ele.style.display = "block";
   }
   if (event.target.value === "Read more") {
-    event.target.value = "Read less";
+    event.target.value = "Read less\u2304";
   } else {
-    event.target.value = "Read more";
+    event.target.value = "Read more\u2304";
   }
 });
 
