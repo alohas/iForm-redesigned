@@ -121,12 +121,21 @@ coll.addEventListener("click", function toggle() {
   } else {
     ele.style.display = "block";
   }
-});
-coll.addEventListener("click", function(event) {
-  console.log(event);
   if (event.target.value === "Read more") {
     event.target.value = "Read less";
   } else {
     event.target.value = "Read more";
   }
+});
+
+var navi = document.querySelector("#nav-icon");
+var list = document.querySelector("#navig");
+
+navi.addEventListener("click", function() {
+  if (navi.classList.contains("open")) {
+    navi.classList.remove("open");
+  } else navi.classList.add("open");
+  if (list.classList.contains("hidden")) {
+    list.classList.remove("hidden");
+  } else list.classList.add("hidden");
 });
