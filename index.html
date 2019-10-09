@@ -412,14 +412,14 @@
       </div>
     </footer>
 
-    <div class="modal hidden">
+    <div class="modal">
       <article class="modal__content">
         <div class="modal__content-header">
           <button class="modal__content-header-back hidden">
             &larr;
           </button>
           <h2>
-            ActiveFit fiber jacket
+            Select size for ActiveFit fiber jacket
           </h2>
           <button class="modal__content-header-close">
             &times;
@@ -447,8 +447,57 @@
             </div>
           </div>
         </div>
+
+        <div class="modal__content-additional">
+          <ul class="modal__list">
+            <li class="modal__list-item">Lightly shaped fit</li>
+            <li class="modal__list-item">
+              Small collar with gray lining
+            </li>
+            <li class="modal__list-item">
+              Two exterior pockets with zip and two inner pockets
+            </li>
+            <li class="modal__list-item">Elasticated cuffs</li>
+            <li class="modal__list-item">
+              100% polyester, Wash at 40 degrees
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal__content-part2 hidden">
+          <div class="modal__content-part2-container">
+            <div class="modal__content-part2-container-box selectedBox">
+              <p><strong>4 issues</strong> for 149 kr.</p>
+              <p>Save 761 kr.</p>
+              <p class="choice">Your choice</p>
+            </div>
+            <div class="modal__content-part2-container-box">
+              <p><strong>6 issues</strong> for 199 kr.</p>
+              <p>Save 866 kr.</p>
+              <p class="choice hidden">Your choice</p>
+              <p class="choice" id="popular">Most Popular</p>
+            </div>
+            <div class="modal__content-part2-container-box">
+              <p><strong>8 issues</strong> for 299 kr.</p>
+              <p>Save 921 kr.</p>
+              <p class="choice hidden">Your choice</p>
+            </div>
+          </div>
+          <p class="aditionalExp">
+            +49.50 kr. for postage exp.
+          </p>
+          <p class="savingOpen">See your savings</p>
+          <div class="Savings hidden">
+            <table></table>
+            <p>Total price incl. delivery</p>
+            <p>198.50 kr.</p>
+          </div>
+        </div>
+
         <div class="modal__content-footer">
-          <button class="btn-cta modalpart2 transparent">Continue</button>
+          <button class="btn-cta modalpart2 transparent" disabled>
+            Continue
+          </button>
           <button class="btn-cta checkout hidden">
             <a href="form.html">Go to the basket!</a>
           </button>

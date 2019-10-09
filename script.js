@@ -1,9 +1,14 @@
 "use strict";
 
 const sizes = document.getElementsByClassName("box-modal");
+const plans = document.getElementsByClassName(
+  "modal__content-part2-container-box"
+);
 const continueBTN = document.querySelector(".modalpart2");
+const backBTN = document.querySelector("button.modal__content-header-back");
 
 continueBTN.addEventListener("click", populateModalTwo);
+backBTN.addEventListener("click", showSizesAgain);
 
 for (var i = 0; i < sizes.length; i++) {
   sizes[i].addEventListener("click", event => {
@@ -11,35 +16,78 @@ for (var i = 0; i < sizes.length; i++) {
   });
 }
 
+for (var i = 0; i < plans.length; i++) {
+  plans[i].addEventListener("click", event => {
+    planHighlight(event);
+  });
+}
+
 function sizeHighlight(btn) {
   document.querySelector("button.modalpart2").classList.remove("transparent");
+  document.querySelector("button.modalpart2").disabled = false;
   for (var i = 0; i < sizes.length; i++) {
     sizes[i].classList.remove("selectedSize");
   }
   btn.target.classList.add("selectedSize");
 }
 
+function planHighlight(btn) {
+  //console.log(btn);
+  for (var i = 0; i < plans.length; i++) {
+    plans[i].classList.remove("selectedBox");
+    plans[i].querySelector(".choice").classList.add("hidden");
+    if (plans[i].querySelectorAll("p")[3]) {
+      plans[i].querySelectorAll("p")[3].classList.remove("hidden");
+    }
+  }
+  btn.target.classList.add("selectedBox");
+  btn.target.querySelector(".choice").classList.remove("hidden");
+
+  if (btn.target.querySelectorAll("p")[3]) {
+    btn.target.querySelectorAll("p")[3].classList.add("hidden");
+  }
+}
+
 function populateModalTwo() {
-  document
-    .querySelector("button.modal__content-header-back.hidden")
-    .classList.remove("hidden");
+  backBTN.classList.remove("hidden");
   document.querySelector("div.modal__content-header > h2").textContent =
-    "Select more issues and save more!";
-  document.querySelector("div.modal__content-body").innerHTML = "";
+    "Pick your preferred monthly subscription offer!";
+  document.querySelector("div.modal__content-body").classList.add("hidden");
+  document
+    .querySelector("div.modal__content-additional")
+    .classList.add("hidden");
   document.querySelector("button.btn-cta.modalpart2").classList.add("hidden");
   document.querySelector("button.checkout").classList.remove("hidden");
+  document.querySelector(".modal__content-part2").classList.remove("hidden");
+}
+
+function showSizesAgain() {
+  document.querySelector("div.modal__content-body").classList.remove("hidden");
+  document
+    .querySelector("div.modal__content-additional")
+    .classList.remove("hidden");
+  backBTN.classList.add("hidden");
+  document.querySelector("div.modal__content-header > h2").textContent =
+    "Select size for ActiveFit fiber jacket";
+  document
+    .querySelector("button.btn-cta.modalpart2")
+    .classList.remove("hidden");
+  document.querySelector("button.checkout").classList.add("hidden");
+  document.querySelector(".modal__content-part2").classList.add("hidden");
 }
 
 document
   .querySelector("button.modal__content-header-close")
   .addEventListener("click", e => {
-    document.querySelector(".modal").classList.add("hidden");
+    //document.querySelector(".modal").classList.add("hidden");
+    document.querySelector(".modal").style.maxHeight = "0";
   });
 
 const openBTN = document
   .querySelector("button.section-1__cta-btn")
   .addEventListener("click", e => {
-    document.querySelector(".modal").classList.remove("hidden");
+    //document.querySelector(".modal").classList.remove("hidden");
+    document.querySelector(".modal").style.maxHeight = "100vh";
   });
 
 document.querySelector(".checkout").addEventListener("click", e => {
@@ -170,4 +218,17 @@ navi.addEventListener("click", function() {
   if (list.classList.contains("hidden")) {
     list.classList.remove("hidden");
   } else list.classList.add("hidden");
+});
+
+var tableShow = false;
+document.querySelector("p.savingOpen").addEventListener("click", e => {
+  if (tableShow == false) {
+    tableShow = true;
+    document.querySelector("div.Savings").classList.remove("hidden");
+    document.querySelector("p.savingOpen").textContent = "Hide your savings";
+  } else {
+    tableShow = false;
+    document.querySelector("div.Savings").classList.add("hidden");
+    document.querySelector("p.savingOpen").textContent = "See your savings";
+  }
 });
