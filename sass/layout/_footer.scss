@@ -4,5 +4,18 @@
 
   &__box {
     padding-bottom: 2rem;
+
+    img {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+  @include big-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

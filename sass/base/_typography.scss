@@ -14,17 +14,17 @@ body {
 .heading-medium {
   font-size: 1.6rem;
   font-weight: 600;
-  @include tablet {
-    font-size: 2.8rem;
-  }
 }
 
 .heading-medium-light {
   font-size: 1.6rem;
   font-weight: 200;
-  @include tablet {
-    font-size: 2.8rem;
-  }
+}
+
+.heading-large-bold {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: $color-violet;
 }
 
 .heading-small {
@@ -79,13 +79,18 @@ a {
 }
 
 .price-save {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: $color-red;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .price-exp {
   font-size: 1.1rem;
   color: $color-grey-darker;
   font-weight: 900;
+}
+
+.section-4__leadparagraph {
+  font-size: 1.6rem;
+  padding: 2rem;
 }

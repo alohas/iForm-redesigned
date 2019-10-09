@@ -22,11 +22,12 @@
     width: 24px;
     height: 3px;
 
-    position: absolute;
-    top: 2rem;
+    position: fixed;
+    top: 2.7rem;
     left: 2rem;
 
     background: $color-violet;
+    z-index: 100;
 
     &::before {
       content: "";
@@ -34,7 +35,7 @@
       width: 24px;
       height: 3px;
 
-      position: absolute;
+      position: fixed;
       top: 0.9rem;
 
       background: $color-violet;
@@ -46,13 +47,13 @@
       width: 24px;
       height: 3px;
 
-      position: absolute;
+      position: fixed;
       top: 1.8rem;
 
       background: $color-violet;
     }
   }
-  
+
   &__menu {
     z-index: 9;
     width: 100vw;
