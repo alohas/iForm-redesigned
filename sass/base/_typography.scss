@@ -69,6 +69,18 @@ body {
   margin-left: -1.5rem;
 }
 
+.menu__list li {
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+  color: black;
+}
+
+.menu__list li:hover {
+  color: $color-red;
+  background-color: white;
+}
+
 a {
   font-size: inherit;
   text-decoration: none;
