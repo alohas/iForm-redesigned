@@ -15,6 +15,7 @@
 
     img {
       width: 20px;
+      cursor: pointer;
     }
 
     a {
@@ -54,6 +55,7 @@
         border: 2px solid $color-grey-dark;
         margin: 1rem 0.5rem;
         border-radius: 50%;
+        cursor: pointer;
 
         &-active {
           background-color: $color-grey-dark;

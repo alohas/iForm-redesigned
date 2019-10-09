@@ -162,6 +162,23 @@ coll.addEventListener("click", function toggle() {
 
 var navi = document.querySelector("#nav-icon");
 var list = document.querySelector(".header__menu");
+var menu = document.querySelector(".desknav");
+
+menu.addEventListener("mouseover", function() {
+  list.classList.remove("hidden");
+});
+
+list.addEventListener("mouseover", function() {
+  list.classList.remove("hidden");
+});
+
+menu.addEventListener("mouseout", function() {
+  list.classList.add("hidden");
+});
+
+list.addEventListener("mouseout", function() {
+  list.classList.add("hidden");
+});
 
 navi.addEventListener("click", function() {
   if (navi.classList.contains("open")) {
@@ -170,4 +187,10 @@ navi.addEventListener("click", function() {
   if (list.classList.contains("hidden")) {
     list.classList.remove("hidden");
   } else list.classList.add("hidden");
+});
+
+document.querySelectorAll("li.menu__list-item").forEach(item => {
+  item.addEventListener("click", event => {
+    list.classList.add("hidden");
+  });
 });
