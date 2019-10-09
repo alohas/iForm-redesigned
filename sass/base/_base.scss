@@ -32,3 +32,9 @@ section {
 section:nth-child(even) {
   background: $color-grey-light;
 }
+
+#form-body {
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+}
