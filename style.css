@@ -824,7 +824,9 @@ input.collapsible {
         text-align: center;
         border-radius: 50%;
         width: 32px;
-        height: 32px; }
+        height: 32px;
+        outline: none;
+        cursor: pointer; }
       .modal__content-header-back {
         font-family: inherit;
         font-size: 2rem;
@@ -838,7 +840,9 @@ input.collapsible {
         text-align: center;
         border-radius: 50%;
         width: 32px;
-        height: 32px; }
+        height: 32px;
+        outline: none;
+        cursor: pointer; }
     .modal__content-body {
       padding: 2.5rem 1.5rem 2.5rem 2.5rem;
       display: grid;
