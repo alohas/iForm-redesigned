@@ -31,7 +31,7 @@ section {
   padding: 2rem;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
   background: $color-grey-light;
 }
 
