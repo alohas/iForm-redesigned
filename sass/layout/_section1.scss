@@ -21,8 +21,8 @@
     }
 
     a {
-      text-decoration: underline;
-      margin-left: 2rem;
+      border-bottom: 1px solid $color-font;
+      padding-left: 0.2rem;
     }
   }
 
@@ -44,6 +44,8 @@
     }
 
     &-navigation {
+      display: grid;
+      grid-template-columns: 1fr repeat(6, min-content) 1fr;
       height: 4rem;
       width: 100%;
       margin: 0 auto;
@@ -63,7 +65,32 @@
           background-color: $color-grey-dark;
         }
       }
+
+      .btn-gallery-right {
+        justify-self: right;
+      }
     }
+    // &-navigation {
+    //   height: 4rem;
+    //   width: 100%;
+    //   margin: 0 auto;
+    //   max-width: 700px;
+    //   background-color: $color-white;
+
+    //   .circle {
+    //     display: inline-block;
+    //     width: 2rem;
+    //     height: 2rem;
+    //     border: 2px solid $color-grey-dark;
+    //     margin: 1rem 0.5rem;
+    //     border-radius: 50%;
+    //     cursor: pointer;
+
+    //     &-active {
+    //       background-color: $color-grey-dark;
+    //     }
+    //   }
+    // }
   }
 
   &__cta {
@@ -73,9 +100,14 @@
     &-text {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      font-weight: 600;
+      font-weight: 700;
       color: $color-red;
       padding: 0.5rem 0;
+      align-items: baseline;
+
+      p:first-of-type {
+        font-size: 2rem;
+      }
 
       p:last-of-type {
         justify-self: right;
@@ -90,13 +122,17 @@
 
 .rating {
   grid-row: 2/3;
+  a {
+    display: block;
+    color: inherit;
+    margin: 0;
+  }
 }
 
 .listandbutton {
   @include big-mobile {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: 1fr;
     max-width: 700px;
     margin: 0 auto;
   }

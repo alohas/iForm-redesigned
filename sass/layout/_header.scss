@@ -16,6 +16,22 @@
     align-items: center;
     justify-items: center;
     z-index: 10;
+
+    h3 {
+      position: relative;
+    }
+
+    h3::before {
+      display: inline-block;
+      content: "\002714";
+      font-size: 1.2rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: $color-violet;
+      color: $color-white;
+      text-align: center;
+    }
   }
 
   &__burgermenu {

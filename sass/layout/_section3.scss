@@ -3,6 +3,7 @@
 
   h2 {
     margin: 1rem 2rem;
+    font-size: 2rem;
   }
 
   p {
@@ -18,6 +19,8 @@
       flex: 0 1 100%; // shorthand flex-grow:0 flex-shrink:1 flex-width:24%
       margin-top: 3rem;
       background-color: $color-white;
+      position: relative;
+      padding-bottom: 4rem;
 
       .price {
         float: right;
@@ -28,8 +31,11 @@
       }
 
       .btn-cta {
-        float: right;
-        margin: -2rem 2rem 2rem 2rem;
+        // float: right;
+        // margin: -2rem 2rem 2rem 2rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
       }
     }
 
@@ -38,12 +44,22 @@
     }
 
     @include tablet {
-      flex-wrap: wrap;
-      justify-content: space-around;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 3rem;
 
       .flexitem {
         flex: 0 1 320px;
       }
     }
+
+    // @include tablet {
+    //   flex-wrap: wrap;
+    //   justify-content: space-around;
+
+    //   .flexitem {
+    //     flex: 0 1 320px;
+    //   }
+    // }
   }
 }

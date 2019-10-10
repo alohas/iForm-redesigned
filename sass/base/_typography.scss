@@ -1,5 +1,5 @@
 //their font is GT-Walsheim-Bold.eot, but you gotta pay for it
-@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap");
 
 body {
   font-size: $defoult-font-size;
@@ -14,7 +14,7 @@ body {
 
 .heading-medium {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 1000;
 }
 
 .section-1__heading {
@@ -22,13 +22,13 @@ body {
 }
 
 .heading-medium-light {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   font-weight: 200;
 }
 
 .heading-large-bold {
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 700;
   color: $color-violet;
 }
 
