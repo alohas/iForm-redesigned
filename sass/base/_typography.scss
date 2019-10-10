@@ -65,6 +65,13 @@ body {
 .form-li {
   position: relative;
   padding: 0.5rem 0 0.5rem;
+  list-style: none;
+}
+.form-li::before {
+  color: #97be0c;
+  content: "\002714";
+  font-size: 1.2rem;
+  margin-left: -1.5rem;
 }
 
 .form-checklist {

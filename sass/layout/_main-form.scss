@@ -29,6 +29,7 @@
     display: grid;
     grid-template-columns: 1fr max-content;
     li {
+      width: 100%;
       padding-top: 1.2rem;
       padding-bottom: 0.6rem;
       border-bottom: 1px solid $color-grey-dark;
