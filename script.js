@@ -10,8 +10,6 @@ const backBTN = document.querySelector("button.modal__content-header-back");
 continueBTN.addEventListener("click", populateModalTwo);
 backBTN.addEventListener("click", showSizesAgain);
 
-document.querySelector("#collaps").value = "Read more\u2304";
-
 for (var i = 0; i < sizes.length; i++) {
   sizes[i].addEventListener("click", event => {
     sizeHighlight(event);
@@ -206,10 +204,10 @@ coll.addEventListener("click", function toggle() {
   }
   if (exp == false) {
     exp = true;
-    event.target.value = "Read less\u2303";
+    event.target.value = "Read less";
   } else {
     exp = false;
-    event.target.value = "Read more\u2304";
+    event.target.value = "Read more";
   }
 });
 
