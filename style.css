@@ -142,7 +142,8 @@ body {
 
 .form-li::before {
   color: #97be0c;
-  content: "\002714";
+  content: "✔";
+  content: "✔";
   font-size: 1.2rem;
   margin-left: -1.5rem; }
 
