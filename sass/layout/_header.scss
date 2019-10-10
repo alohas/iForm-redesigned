@@ -13,12 +13,24 @@
     border-top: 1px solid $color-grey-dark;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include tablet {
+      grid-gap: 3rem;
+    }
+
     align-items: center;
     justify-items: center;
     z-index: 10;
 
     h3 {
       position: relative;
+      @include tablet {
+        justify-self: left;
+      }
+    }
+    h3:first-of-type {
+      @include tablet {
+        justify-self: right;
+      }
     }
 
     h3::before {
@@ -89,6 +101,7 @@
   height: 100%;
   text-align: center;
   padding-top: 10px;
+  justify-self: left;
 }
 
 @media only screen and (min-width: 600px) {
@@ -98,7 +111,7 @@
       height: initial;
     }
     &__info {
-      grid-template-columns: 1fr 4fr 4fr 1fr;
+      grid-template-columns: 1fr max-content max-content 1fr;
     }
   }
   .desknav {

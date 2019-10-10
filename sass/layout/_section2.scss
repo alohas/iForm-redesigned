@@ -29,8 +29,10 @@ input.collapsible {
   padding: 0;
   cursor: pointer;
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 600;
   outline: none;
+  color: $color-violet;
+  border-bottom: 1px solid $color-violet;
 }
 
 .section-2 p {
