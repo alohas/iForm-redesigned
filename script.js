@@ -10,6 +10,8 @@ const backBTN = document.querySelector("button.modal__content-header-back");
 continueBTN.addEventListener("click", populateModalTwo);
 backBTN.addEventListener("click", showSizesAgain);
 
+document.querySelector("#collaps").value = "Read more\u2304";
+
 for (var i = 0; i < sizes.length; i++) {
   sizes[i].addEventListener("click", event => {
     sizeHighlight(event);
@@ -193,6 +195,7 @@ function slideRight() {
 }
 
 var coll = document.querySelector(".collapsible");
+var exp = false;
 
 coll.addEventListener("click", function toggle() {
   var ele = document.getElementById("snap");
@@ -201,9 +204,11 @@ coll.addEventListener("click", function toggle() {
   } else {
     ele.style.display = "block";
   }
-  if (event.target.value === "Read more") {
-    event.target.value = "Read less\u2304";
+  if (exp == false) {
+    exp = true;
+    event.target.value = "Read less\u2303";
   } else {
+    exp = false;
     event.target.value = "Read more\u2304";
   }
 });
