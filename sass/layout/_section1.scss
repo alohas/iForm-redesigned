@@ -4,14 +4,16 @@
   @include desktop {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-column-gap: 2rem;
   }
   &__heading {
     padding: 2rem 0rem;
   }
 
   .rating {
-    margin-left: calc(50% - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
       width: 20px;
@@ -80,6 +82,14 @@
       }
     }
   }
+}
+
+.separatebttn {
+  grid-column: 2/3;
+}
+
+.rating {
+  grid-row: 2/3;
 }
 
 .listandbutton {
