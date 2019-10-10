@@ -154,7 +154,7 @@ body {
 .section-6 li::before,
 .section-2 li::before,
 .modal__list-item:before {
-  content: "\002714";
+  content: "\2713";
   color: #97be0c !important;
   font-size: 1.2rem;
   margin-left: -1.5rem; }
@@ -795,7 +795,7 @@ input.collapsible {
   transition: max-height 0.4s; }
   .modal__content {
     transition: 1s;
-    max-height: 800px;
+    max-height: 100%;
     overflow: scroll;
     background-color: white;
     width: 100%;
