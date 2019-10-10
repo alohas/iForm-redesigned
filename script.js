@@ -79,13 +79,15 @@ function showSizesAgain() {
 document
   .querySelector("button.modal__content-header-close")
   .addEventListener("click", e => {
-    document.querySelector(".modal").classList.add("hidden");
+    //document.querySelector(".modal").classList.add("hidden");
+    document.querySelector(".modal").style.maxHeight = "0";
   });
 
 const openBTN = document
   .querySelector("button.section-1__cta-btn")
   .addEventListener("click", e => {
-    document.querySelector(".modal").classList.remove("hidden");
+    //document.querySelector(".modal").classList.remove("hidden");
+    document.querySelector(".modal").style.maxHeight = "100vh";
   });
 
 document.querySelector(".checkout").addEventListener("click", e => {
